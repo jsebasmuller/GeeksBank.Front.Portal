@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   calculate(){
     if(this.bankForm.valid && this.number1 && this.number2){
       this.isLoad = true;
-      this.resultsService.addResults(this.number1.value, this.number2.value).subscribe(res => {
+      this.resultsService.addResults(parseInt(this.number1.value), parseInt(this.number2.value)).subscribe(res => {
         if(res){
           Swal.fire({
             icon: 'success',
