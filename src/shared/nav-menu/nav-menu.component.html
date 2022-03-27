@@ -1,0 +1,80 @@
+<nav class="pt-3 pb-0 pt-md-4 navbar navbar-expand-lg navbar-dark bg-dark px-2 px-md-3 px-lg-3 px-xxl-4 px-xxxl-5">
+  <div class="container-fluid px-0 px-sm-3 px-md-0">
+    <a class="navbar-brand m-0" routerLink="/">
+      <img class="img-fluid brand-ap" src="assets/logo.png" width="100px" alt="" />
+    </a>
+    <button class="navbar-toggler focus-0 ml-2 border-0 px-0" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <i class="fa-solid fa-bars text-white"></i>
+    </button>
+    <div class="offcanvas offcanvas-end bg-dark py-3 px-3 d-lg-none" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header ">
+        <a class="navbar-brand" routerLink="/">
+          <img class="img-fluid" src="assets/logo.png" width="100px" alt="" />
+        </a>
+        <button type="button" class="btn-close bg-primary rounded-circle" data-bs-dismiss="offcanvas"
+          aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link text-white" routerLink="/" data-bs-dismiss="offcanvas">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="text-white nav-link dropdown-toggle" href="#"
+                id="navbar-brand" role="button" data-bs-toggle="dropdown" aria-expanded="true">Servicios</a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" routerLink="#"
+                    data-bs-dismiss="offcanvas">Avalúos</a></li>
+                <li><a class="dropdown-item" routerLink="#"
+                    data-bs-dismiss="offcanvas">Aliados</a></li>
+                <li><a class="dropdown-item" routerLink="#"
+                    data-bs-dismiss="offcanvas">Tarifas</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="text-white nav-link" hfre="#" data-bs-dismiss="offcanvas">Calcula tu fortuna</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div id="navbarSupportedContentContainer" class="d-flex align-items-center ms-auto d-xl-flex justify-content-between">
+        <ul class="nav nav-pills fs-lg-18-rfs fs-xxl-24-rfs fs-xxxl-26-rfs aling-self-center" id="pills-tab"
+          role="tablist">
+          <li class="nav-item align-self-center" role="presentation">
+            <button class="nav-link text-white" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true" routerLink="/">
+              Inicio
+            </button>
+          </li>
+          <li class="nav-item align-self-center" role="presentation">
+            <div class="nav-link py-0" id="pills-services-tab" data-bs-toggle="pill" data-bs-target="#pills-services"
+              type="button" role="tab" aria-controls="pills-services" aria-selected="true">
+              <button
+                class="btn btn-outline-transparent text-white dropdown shadow-none p-0 fs-lg-18-rfs fs-xxl-24-rfs fs-xxxl-26-rfs"
+                type="button" id="dropdownMenuButtonServices" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Servicios
+              </button>
+              <ul class="dropdown-menu fs-xxxl-20-rfs" aria-labelledby="dropdownMenuButtonServices">
+                <li><a class="dropdown-item" routerLink="#">Avalúos</a></li>
+                <li><a class="dropdown-item py-2" routerLink="#">Aliados</a></li>
+                <li><a class="dropdown-item" routerLink="#">Tarifas</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item px-3 align-self-center" role="presentation">
+            <button
+              class="btn btn-light-green btn-md border-2 rounded-pill text-white fs-lg-16 fs-xxl-20-rfs fs-xxxl-24-rfs"
+              routerLink="#">Calcula tu fortuna</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
